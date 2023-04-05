@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    vertical-align: baseline;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden; }
+  
+  body {
+    background: #3a3738 url("../img/background.jpg");
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    position: relative; }
+  
+  .container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px; }
+  
+  .text-center {
+    text-align: center; }
+  
+  .header {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: right; }
+  
+  .about {
+    padding-top: 5rem;
+    color: #fff; }
+    .about__name {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      letter-spacing: 4px;
+      font-size: 6rem;
+      animation: fadeIn 800ms ease-in-out both; }
+    .about__position {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      animation: opacity 500ms both; }
+    .about__img {
+      width: 22rem;
+      height: 22rem;
+      border-radius: 50%;
+      border: 10px solid #525252;
+      box-shadow: #0000001a 0 4px 12px; }
+  
+  .contact-info {
+    padding-top: 3rem;
+    animation: bounceIn 800ms both; }
+    .contact-info__item {
+      box-shadow: #0000001a 0 4px 12px;
+      background: #fff;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      border: 1px solid #525252;
+      display: inline-block;
+      padding: 10px;
+      border-radius: 50px;
+      width: 30px;
+      height: 30px; }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -40%, 0); }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0); } }
+  @keyframes opacity {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      -webkit-transform: scale(0.1);
+      opacity: 0; }
+    60% {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      opacity: 1; }
+    100% {
+      transform: scale(1);
+      -webkit-transform: scale(1); } }
+  @media only screen and (max-width: 768px) {
+    .about {
+      padding-top: 4rem;
+      color: #fff; }
+      .about__name {
+        font-size: 2.7rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem; }
+      .about__position {
+        font-size: 1rem; }
+      .about__img {
+        width: 14rem;
+        height: 14rem;
+        border: 8px solid #525252; }
+  
+    .contact-info {
+      padding-top: 1.5rem; } }
+  
